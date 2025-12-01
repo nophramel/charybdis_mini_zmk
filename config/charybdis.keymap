@@ -82,10 +82,10 @@
 
         mac_raise_layer {
             bindings = <
-&kp DE_LESS_THAN              &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &hml DE_HASH DE_ASTERISK  &hml DE_CENT DE_C_CEDILLA  &kp DE_PERCENT    &trans  &trans  &trans  &trans  &trans  &trans
-&hml DE_POUND_SIGN DE_DOLLAR  &trans              &trans                &trans                    &trans                     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans                        &trans              &trans                &trans                    &trans                     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                                                                        &trans                    &trans                     &trans            &trans  &trans  &trans
+&kp DE_LESS_THAN              &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES      &hml DE_HASH DE_ASTERISK  &hml DE_CENT DE_C_CEDILLA       &kp DE_PERCENT     &trans  &trans  &trans  &trans  &trans  &trans
+&hml DE_POUND_SIGN DE_DOLLAR  &hml LEFT_CONTROL N1  &hml LEFT_ALT DE_SECTION  &hml LEFT_GUI DE_EQUAL    &hml LEFT_SHIFT LS(DE_SECTION)  &hml LEFT_ALT N    &trans  &trans  &trans  &trans  &trans  &trans
+&kp DE_CARET                  &trans                &kp DE_AT                 &trans                    &trans                          &trans             &trans  &trans  &trans  &trans  &trans  &trans
+                                                                              &trans                    &kp BACKSPACE                   &trans             &trans  &trans  &trans
             >;
 
             label = "MACNUM";
