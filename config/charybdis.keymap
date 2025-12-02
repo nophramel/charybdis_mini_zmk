@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &lt {
@@ -12,7 +13,6 @@
 };
 
 / {
-
     behaviors {
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
@@ -52,6 +52,53 @@
         CAPZ_WORD {
             bindings = <&caps_word>;
             key-positions = <16 19>;
+        };
+
+        to_WIN {
+            bindings = <&to 3>;
+            key-positions = <39 38>;
+            layers = <0 7>;
+        };
+
+        to_MAC {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
+            layers = <3 7>;
+        };
+
+        to_BT_RGB {
+            bindings = <&to 7>;
+            key-positions = <30 29>;
+        };
+
+        left_hand_left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <28 27>;
+        };
+
+        left_hand_right_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <27 26>;
+        };
+
+        left_hand_middle_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <27 26 28>;
+        };
+
+        right_hand_left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <31 32>;
+        };
+
+        right_hand_right_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <32 33>;
+        };
+
+        right_hand_middle_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <31 32 33>;
         };
     };
 
