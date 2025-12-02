@@ -57,17 +57,17 @@
         to_WIN {
             bindings = <&to 3>;
             key-positions = <39 38>;
-            layers = <0 7>;
+            layers = <0 8>;
         };
 
         to_MAC {
             bindings = <&to 0>;
             key-positions = <38 39>;
-            layers = <3 7>;
+            layers = <3 8>;
         };
 
         to_BT_RGB {
-            bindings = <&to 7>;
+            bindings = <&to 8>;
             key-positions = <30 29>;
         };
 
@@ -182,6 +182,17 @@
             >;
 
             label = "scroll";
+        };
+
+        sniper_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "SNIPER";
         };
 
         bt_rgb_layer {
