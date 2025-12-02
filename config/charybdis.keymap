@@ -11,6 +11,7 @@
     quick-tap-ms = <150>;
 };
 
+/ {
     macros {
         To1_macro: To1_macro {
             compatible = "zmk,behavior-macro";
@@ -170,7 +171,7 @@
             >;
 
             label = "BT-RGB";
-       };
+        };
 
         /* layer_2 {
             bindings = <
@@ -224,4 +225,5 @@
                 
                 
         };*/
-        };
+    };
+};
