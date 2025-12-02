@@ -66,6 +66,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CAPZ {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <12 13>;
+        };
+
+        CAPZ_WORD {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -101,6 +115,17 @@
             >;
 
             label = "MACNAV";
+        };
+
+        scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "scroll";
         };
 
         bluetooth_layer {
