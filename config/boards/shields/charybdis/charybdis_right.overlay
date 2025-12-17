@@ -1,11 +1,7 @@
-/*
- * Copyright (c) 2020 ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
- 
 #include "charybdis.dtsi"
+#include "charybdis_pmw3610.dtsi"
 
+// The matrix transform is 6 columns over because the left half is 6 columns wide.
 &default_transform {
     col-offset = <6>;
 }; 
@@ -21,6 +17,10 @@
 		;
 };
 &right_encoder {
+    status = "okay";
+};
+
+&trackball {
     status = "okay";
 };
 
