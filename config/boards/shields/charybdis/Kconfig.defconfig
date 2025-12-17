@@ -1,4 +1,7 @@
-if SHIELD_CHARYBDIS_RIGHT
+# Copyright (c) 2022 ZMK Contributors
+# SPDX-License-Identifier: MIT
+ 
+if SHIELD_CHARYBDIS_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Charybdis"
@@ -8,10 +11,16 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
+if SHIELD_CHARYBDIS_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Charybdis Right"
+
+endif
+
 if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 config ZMK_SPLIT
 	default y
 
 endif
-
