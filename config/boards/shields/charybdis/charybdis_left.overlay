@@ -1,10 +1,5 @@
-/*
- * Copyright (c) 2020 ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include "charybdis.dtsi"
+#include "charybdis_pmw3610.dtsi"
 
 &kscan0 {
 	col-gpios
